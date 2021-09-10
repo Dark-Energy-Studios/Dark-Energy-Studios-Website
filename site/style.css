@@ -1,0 +1,48 @@
+:root {
+	font-family: sans-serif;
+	color: snow;
+}
+
+body {
+	background: rgb(17, 17, 17);
+	background: linear-gradient(
+		100deg,
+		rgba(17, 17, 17, 1) 0%,
+		rgba(0, 0, 0, 1) 100%
+	);
+}
+
+h1.epic-title {
+	font-size: 500%;
+	animation: slide-title-in 3s linear;
+	animation-fill-mode: forwards;
+}
+h2.epic-description {
+	opacity: 0%;
+	font-size: 200%;
+	color: #27344e;
+	animation: slide-title-in 2s linear 3.5s;
+	animation-fill-mode: forwards;
+}
+
+a {
+	text-decoration: none;
+	color: #fb6149;
+}
+
+div.center-parent {
+	text-align: center;
+	margin-top: 20%;
+}
+
+@keyframes slide-title-in {
+	0% {
+		transform: translateY(100px);
+		transform: rotateY(25deg);
+		opacity: 0%;
+	}
+	100% {
+		opacity: 100%;
+		transform: translateY(0px);
+	}
+}
