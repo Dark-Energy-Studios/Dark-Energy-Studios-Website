@@ -5,3 +5,5 @@ services:
     build: .
     container_name: dark-energy-studios-site
     restart: always
+    ports:
+      - "5009:5009"
