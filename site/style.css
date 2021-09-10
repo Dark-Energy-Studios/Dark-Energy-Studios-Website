@@ -37,12 +37,12 @@ div.center-parent {
 
 @keyframes slide-title-in {
 	0% {
-		transform: translateY(100px);
-		transform: rotateY(25deg);
+		transform: rotateY(30deg);
 		opacity: 0%;
+		filter: blur(30px);
 	}
 	100% {
+		transform: rotateY(0deg);
 		opacity: 100%;
-		transform: translateY(0px);
 	}
 }
