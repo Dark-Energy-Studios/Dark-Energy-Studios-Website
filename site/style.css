@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap");
+
 :root {
-	font-family: sans-serif;
+	font-family: "Teko", sans-serif;
 	color: snow;
 }
 
@@ -17,6 +19,9 @@ h1.epic-title {
 	animation: slide-title-in 3s linear;
 	animation-fill-mode: forwards;
 }
+h1.epic-studio {
+	font-size: 400%;
+}
 h2.epic-description {
 	opacity: 0%;
 	font-size: 200%;
@@ -32,17 +37,37 @@ a {
 
 div.center-parent {
 	text-align: center;
-	margin-top: 20%;
+	margin-top: 15%;
+}
+
+footer {
+	font-family: sans-serif;
+
+	bottom: 0;
+	position: absolute;
+	left: 47%;
+}
+footer a {
+	color: #090909;
+	font-size: 125%;
+	animation: sneaky-herzmut 1s linear 6s;
+	animation-fill-mode: forwards;
 }
 
 @keyframes slide-title-in {
-	0% {
+	from {
 		transform: rotateY(30deg);
 		opacity: 0%;
 		filter: blur(30px);
 	}
-	100% {
+	to {
 		transform: rotateY(0deg);
 		opacity: 100%;
+	}
+}
+
+@keyframes sneaky-herzmut {
+	to {
+		color: #5d000083;
 	}
 }
